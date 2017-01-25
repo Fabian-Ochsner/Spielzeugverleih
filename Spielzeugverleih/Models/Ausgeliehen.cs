@@ -12,7 +12,7 @@ namespace Spielzeugverleih.Models
         public virtual DateTime DatumVon { get; set; }
         public virtual DateTime DatumBis { get; set; }
         public virtual float Price { get; set; }
-        public virtual int Mieter { get; set; }
+        public virtual int MieterID { get; set; }
         public virtual Spielzeug Spielzeug { get; set; }
     }
 }
