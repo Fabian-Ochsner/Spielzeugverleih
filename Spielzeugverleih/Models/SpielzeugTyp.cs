@@ -9,5 +9,6 @@ namespace Spielzeugverleih.Models
     {
         public virtual int ID { get; set; }
         public virtual string Name { get; set; }
+        public virtual List<Spielzeug> Spielzeugs { get; set; }
     }
 }
