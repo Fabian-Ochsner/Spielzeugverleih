@@ -16,24 +16,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
-                </ul>
+                @Html.ActionLink("Spielzeugverleih", "Index", "Spielzeugs", new { area = "" }, new { @class = "navbar-brand" })
             </div>
         </div>
     </div>
     <div class="container body-content">
 
         <div class="btn-group" role="group" aria-label="...">
-            <button onclick="location.href='@Url.Action("Index", "Homes")'" name="Album" type="button" class="btn btn-default">Home</button>
-            <button onclick="location.href='@Url.Action("Index", "Albums")'" name="Album" type="button" class="btn btn-default">Album</button>
-            <button onclick="location.href='@Url.Action("Index", "Artists")'" name="Artist" type="button" class="btn btn-default">Artist</button>
-            <button onclick="location.href='@Url.Action("Index", "Genres")'" name="Genre" type="button" class="btn btn-default">Genre</button>
-            <button onclick="location.href='@Url.Action("Index", "Herausgebers")'" name="Herausgeber" type="button" class="btn btn-default">Herausgeber</button>
+            <button onclick="location.href='@Url.Action("Index", "Spielzeugs")'" name="Spielzeug" type="button" class="btn btn-default">Spielzeug</button>
+            <button onclick="location.href='@Url.Action("Index", "SpielzeugTyps")'" name="SpielzeugTyp" type="button" class="btn btn-default">Spielzeug Typ</button>
+            <button onclick="location.href='@Url.Action("Index", "Ausgeliehens")'" name="Ausgeliehen" type="button" class="btn btn-default">Ausgeliehen</button>
         </div>
 
 
